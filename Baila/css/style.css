@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face{
+	font-family: "iconos";
+	src: url(../css/FontAwesome.otf) format("opentype");
+}
+
+/* bug del botón de descarga */
+audio::-internal-media-controls-download-button {
+    display:none;
+}
+
+audio::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+audio::-webkit-media-controls-panel {
+    width: calc(100% + 30px); /* Adjust as needed */
+}
+
+.icon-copy:before {
+	font-family: "iconos";
+	content: "\f1f9";
+	font-size: 1em;
+	color: #FAC800;
+}
+
+.emoji {
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    margin-bottom: -0.25em;
+}
+
+
+.icon-home:before {
+	font-family: "iconos";
+	content: "\f015";
+	font-size: 2em;
+}
+
+.icon-info:before{
+	font-family: "iconos";
+	content: "\f05a";
+	font-size: 2em;
+}
+
+.icon-files:before{
+	font-family: "iconos";
+	content: "\f0c5";
+	font-size: 2em;
+}
+
+.icon-github:before{
+	font-family: "iconos";
+	content: "\f113";
+	font-size: 2em;
+}
+
+.icon-facebook:before{
+	font-family: "iconos";
+	content: "\f230";
+	font-size: 2em;
+}
+
+.icon-mixcloud:before{
+	font-family: "iconos";
+	content: "\f289";
+	font-size: 2em;
+}
+
+body {
+    text-align: center;
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    color: #243C3C;
+}
+
+
+section{
+display:block;
+width:600px;
+height:400px;
+position:absolute;
+top:50%;
+left:50%;
+margin-top:-300px;
+margin-left:-300px;
+}
+
+article{
+  background-color: #FAFAFA;
+  border-radius: 15%;
+  padding: 50px;
+}
+
+h1{
+  font-style: bold;
+  font-size: 2em;
+}
+
+a:link, a:visited, a:hover {
+  text-decoration: none;
+	color: white;
+	text-shadow: none;
+	-webkit-transition: 500ms linear 0s;
+	-moz-transition: 500ms linear 0s;
+	-o-transition: 500ms linear 0s;
+	transition: 500ms linear 0s;
+	outline: 0 none;
+}
+
+
+#links,div, a:link, a:visited, a:hover{
+  text-align: center;
+  margin: 2px;
+  display: inline;
+  color: #243C3C;
+
+}
+#logo{
+  border-radius: 80%;
+  width: 200px;
+  height: 200px;
+
+}
