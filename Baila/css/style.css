@@ -4,6 +4,18 @@
 	font-family: "iconos";
 	src: url(../css/FontAwesome.otf) format("opentype");
 }
+/*Loader*/
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/load.gif) center no-repeat #fff;
+}
 
 /* bug del botón de descarga */
 audio::-internal-media-controls-download-button {
@@ -80,7 +92,6 @@ body {
     color: #243C3C;
 }
 
-
 section{
 display:inherit;
 width:600px;
@@ -100,12 +111,15 @@ article{
 
 h1{
   font-style: bold;
-  font-size: 2em;
+  font-size: 30px;
 }
 
+h3{
+	font-size: 20px;
+}
 a:link, a:visited, a:hover {
   text-decoration: none;
-	color: white;
+	color: #243C3C;
 	text-shadow: none;
 	-webkit-transition: 500ms linear 0s;
 	-moz-transition: 500ms linear 0s;
@@ -114,17 +128,19 @@ a:link, a:visited, a:hover {
 	outline: 0 none;
 }
 
+#ahora {
+	font-style: italic;
+	font-size: 12px;
+}
 
 #links,div, a:link, a:visited, a:hover{
   text-align: center;
   margin: 2px;
   display: inline;
-  color: #243C3C;
-
 }
+
 #logo{
   border-radius: 80%;
   width: 200px;
   height: 200px;
-
 }

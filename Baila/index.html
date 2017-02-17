@@ -1,22 +1,45 @@
-<!DOCTYPE html>
+<html lang="es">
 <head>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<title>Baila Radio | Antofagasta, Chile.</title>
+<title>Baila Radio | Antofagasta, Chile</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="scripts/jquery.shoutcast.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+
+$.SHOUTcast({
+   host : '104.236.84.178',
+   port : 8000,
+   interval : 5000,
+   stats : function(){
+      $('#suena').text(this.get('songtitle'));
+   }
+}).startStats();
+</script>
 </head>
-<body>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+  <div class="se-pre-con"></div>
   <section>
     <article>
       <img id="logo" src="img/logo.png">
-      <h1>Baila Radio | Te hacemos bailar.</h1>
-      <h3>Tu fuente de música electrónica Underground en Antofagasta.</h3>
-      <span>Mantenido por: <a href="mailto:iam@jbarahona.info">Johan Barahona</a></span>
+      <h1>Baila Radio</h1>
+      <h3>Tu fuente de música electrónica en Antofagasta</h3>
       <p> <audio controls autoplay>
           <source src="http://104.236.84.178:8000?type=http&nocache=5" type="audio/mpeg">
             Tu explorador no soporta HTML5. ACTUALIZATE PO'H.
           </audio>
       </p>
+
+      <p id="ahora">
+      Ahora: <span id="suena"></span>
+      </p>
+      <br/>
       <div id="links">
           <a href="index.html" target="_blank"><div><span class="icon-home"></span></div></a>
           <a href="https://www.facebook.com/BailaRadio/" target="_blank"><div><span class="icon-facebook"></span></div></a>
@@ -24,6 +47,5 @@
         </div>
       </article>
   </section>
-
-
 </body>
+</html>
