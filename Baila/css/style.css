@@ -22,6 +22,7 @@ audio::-internal-media-controls-download-button {
     display:none;
 }
 
+
 audio::-webkit-media-controls-enclosure {
     overflow:hidden;
 }
@@ -30,6 +31,7 @@ audio::-webkit-media-controls-panel {
     width: calc(100% + 30px); /* Adjust as needed */
 }
 
+/*Iconos */
 .icon-copy:before {
 	font-family: "iconos";
 	content: "\f1f9";
@@ -81,6 +83,56 @@ audio::-webkit-media-controls-panel {
 	font-size: 2em;
 }
 
+.icon-twitter:before{
+	font-family: "iconos";
+	content: "\f081";
+	font-size: 2em;
+}
+
+.icon-html5:before{
+	font-family: "iconos";
+	content: "\f13b";
+	font-size: 9px;
+}
+
+.icon-css3:before{
+	font-family: "iconos";
+	content: "\f13c";
+	font-size: 9px;
+}
+
+.icon-linux:before{
+	font-family: "iconos";
+	content: "\f17c";
+	font-size: 9px;
+}
+
+/*EYECANDY*/
+
+a:link, a:visited, a:hover {
+  	text-decoration: none;
+		color: #243C3C;
+		text-shadow: none;
+		-webkit-transition: 500ms linear 0s;
+		-moz-transition: 500ms linear 0s;
+		-o-transition: 500ms linear 0s;
+		transition: 500ms linear 0s;
+		outline: 0 none;
+}
+
+a:hover {
+  	text-decoration: none;
+		color: #BC943A;
+		text-shadow: none;
+		-webkit-transition: 250ms linear 0s;
+		-moz-transition: 250ms linear 0s;
+		-o-transition: 250ms linear 0s;
+		transition: 250ms linear 0s;
+		outline: 0 none;
+}
+
+/*Maqueteado CSS3*/
+
 body {
     text-align: center;
     background: url("../img/bg.jpg") no-repeat center center fixed;
@@ -93,40 +145,36 @@ body {
 }
 
 section{
-display:inherit;
-width:600px;
-height:400px;
-position:absolute;
-top:50%;
-left:50%;
-margin-top:-300px;
-margin-left:-300px;
+	position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 }
 
 article{
-  background-color: #FAFAFA;
-  border-radius: 15%;
-  padding: 50px;
+		display: inline-block;
+  	background-color: #FAFAFA;
+		background:#FAFAFA;
+		-webkit-box-shadow:0 0 30px rgba(0,0,0,0.6);
+		-moz-box-shadow:0 0 30px rgba(0,0,0,0.6);
+		box-shadow:0 0 30px rgba(0,0,0,0.6);
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		width: 700px;
+		height: auto;
+		max-width: 80%;
+		padding: 30px;
 }
 
+
 h1{
-  font-style: bold;
-  font-size: 30px;
+  	font-size: 2em;
 }
 
 h3{
-	font-size: 20px;
+		font-size: 1.3	em;
 }
-a:link, a:visited, a:hover {
-  text-decoration: none;
-	color: #243C3C;
-	text-shadow: none;
-	-webkit-transition: 500ms linear 0s;
-	-moz-transition: 500ms linear 0s;
-	-o-transition: 500ms linear 0s;
-	transition: 500ms linear 0s;
-	outline: 0 none;
-}
+
 
 #ahora {
 	font-style: italic;
@@ -141,6 +189,26 @@ a:link, a:visited, a:hover {
 
 #logo{
   border-radius: 80%;
-  width: 200px;
-  height: 200px;
+	width: 30%;
+	-webkit-box-shadow:0 0 8px rgba(0,0,0,0.6);
+	-moz-box-shadow:0 0 8px rgba(0,0,0,0.6);
+	box-shadow:0 0 8px rgba(0,0,0,0.6);
+}
+
+#footer{
+	font-size: 9px;
+}
+
+#publicidad{
+	float: left;
+	position: fixed;
+	top: 50%;
+	left: 80%;
+}
+
+#bloquePub{
+	padding: 0px;
+	width: 300px;
+	height: 550px;
+	padding: 1px;
 }
