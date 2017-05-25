@@ -1,0 +1,100 @@
+<html lang="es">
+<meta charset="utf-8">
+<meta property="og:url" content="https://baila.jbarahona.info" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Baila Radio" />
+<meta property="og:description" content="Tu fuente de música electrónica en Antofagasta, Chile." />
+<meta property="og:image" content="https://baila.jbarahona.info/img/img/logounrender.png" />
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>Baila Radio | Antofagasta, Chile</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="scripts/jquery.shoutcast.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script src="http://www.google-analytics.com/analytics.js"></script>
+<script src="scripts/tweets.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-47382483-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+<script>
+$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+
+$.SHOUTcast({
+   host : '104.236.84.178',
+   port : 8000,
+   interval : 30000,
+   stats : function(){
+      $('#suena').text(this.get('songtitle'));
+   }
+}).startStats();
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2830411643911488",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+<body>
+  <div class="se-pre-con"></div>
+  <section>
+    <article>
+      <img id="logo" src="img/logounrender.png">
+      <h1>Baila Radio</h1>
+      <h3>Tu fuente de música electrónica en Antofagasta</h3>
+      <p> <audio controls autoplay>
+          <source src="http://104.236.84.178:8000?type=http&nocache=5" type="audio/mpeg">
+            Tu explorador no soporta HTML5. ACTUALIZATE PO'H.
+          </audio>
+      </p>
+      <br/>
+      <div id="links">
+          <a href="https://www.twitter.com/BailaRadio" target="_blank" title="Nuestro Twitter"><div><span class="icon-twitter"></span></div></a>
+          <a href="https://www.facebook.com/BailaRadio/" target="_blank" title="Nuestra Página en Facebook"><div><span class="icon-facebook"></span></div></a>
+					<a href="https://www.github.com/" target="_blank"><div><span class="icon-github" title="Powered by GitHub & DigitalOcean!"></span></div></a>
+					<a href="https://www.jbarahona.info" target="_blank"><div><span class="icon-info" title="El sitio de mi papá"></span></div></a><br/>
+					<span id="footer">Usando tecnologías como</span>
+					<span class="icon-html5"></span>
+					<span class="icon-css3"></span>
+					<span class="icon-linux"></span>
+					<span id="footer">& diseñado por <a href="mailto:iam@jbarahona.info">nosinside&copy</a>
+      </div>
+			</article>
+		</section>
+
+		<section id="publicidad">
+			<article id="bloquePub">
+				<script type="text/javascript">
+				function Ocultar(){
+					document.getElementById('publicidad').style.display = 'none';}
+					</script>
+				<input type="button" value="Ocultar" onclick="Ocultar()">
+				<p>
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- Banner2 -->
+					<ins class="adsbygoogle"
+     			style="display:block"
+     			data-ad-client="ca-pub-2830411643911488"
+     			data-ad-slot="8589105380"
+     			data-ad-format="auto"></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</p>
+			</article>
+		</section>
+</body>
+</html>
